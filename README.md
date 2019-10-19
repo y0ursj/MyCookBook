@@ -7,5 +7,6 @@ Original Stretch Goals:
 Give highlight videos and player stats for each game. 
 Give stats and awards of players past history. 
 
+![Alt Text](https://media.giphy.com/media/3oAt2dA6LxMkRrGc0g/source.gif)
 
 
