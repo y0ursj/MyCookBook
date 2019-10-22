@@ -13,7 +13,7 @@ class Players extends React.Component {
       idTeam: props.idTeam
     }
   }
- 
+
   componentDidMount = async () => {
     const response = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/lookup_all_players.php?id=${this.state.idTeam}`)
     const players = response.data.player;
@@ -26,14 +26,16 @@ class Players extends React.Component {
   render() {
     console.log(this.state.players)
     return (
-      <div>
+      <div className="playersimg2">
         {
           this.state.players.map(players => (
-            <Link to={`/profile/${players.idPlayer}`} > 
-              <button>{players.strPlayer}</button>
-              <img src={players.strCutout} />
-            </Link>
-  
+            <div className="players"><Link to={`/profile/${players.idPlayer}`} >
+              <div className="players-center">
+                <img src={players.strCutout} />
+                <button>{players.strPlayer}</button>
+              </div>
+            </Link></div>
+
           ))
         }
       </div >

@@ -1,22 +1,165 @@
-.App {
-  text-align: center;
+.app {
+  background-image: url("https://wallpaperaccess.com/full/128139.jpg");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+  background-size: cover;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
+
+.header {
+color: white;
+text-align: center;
+font-family: 'Permanent Marker', cursive;
+background: url('./images/basket.jpg')no-repeat center; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+background-size: cover;
+width: 100%;
+font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#header-link {
+color: white;
+font-size: 30px;
+}
+
+h1{
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+#navimg {
+  position: relative;
+  width: 100%;
+  height: 200px;
 }
+
+.team-container{
+  border-top: 6px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teams{
+  text-align: center;
+  margin: 20px;
+  width: 15%;
+  height: 200px;
+  background-color:transparent;
+  opacity: 0.7;
+  /* border: 1px solid purple; */
+  margin: 30px auto;
+}
+
+.teams:hover{
+  background: grey;
+}
+
+.teamimg {
+  size: 100%;
+}
+
+/* .teamimg:hover {
+  background-color: red;
+} */
+
+button { 
+  background-color: red;
+  /* border: 1px solid blue; */
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  top: 6px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.playersimg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.players{
+  display: flex;
+  justify-content: center;
+  border:solid grey;
+  margin: 20px;
+  background-color:grey;
+  opacity: 0.9;
+}
+
+
+.players-center {
+  display: grid;
+  grid-template-rows: max-content;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100px;
+
+}
+
+.footer p {
+  text-align: center;
+}
+
+ img {
+  width: 150px;
+  height: 150px;
+
+ }
+
+ players {
+  display: flex;
+ }
+
+ .playersimg2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+ }
+
+.stats {
+  color:white; 
+  text-align: center;
+}
+
+#profilepic img {
+  height: 500px;
+  width: 500px;
+  text-align: center;
+}
+#profilepic {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+#profile-page {
+  display: flex;
+  min-height: 89vh;
+  padding-top: 20px;
+}
+h1 {
+  margin-block-start: auto;
+}
+
+p {
+ font-size: 25px;
+ padding-top: 30px;
+}
+
+

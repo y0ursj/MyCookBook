@@ -27,14 +27,19 @@ class Profile extends React.Component {
   render() {
     console.log(this.state.players)
     return (
-      <div>
-        <img src={this.state.players.strThumb}></img>
+      <div id="profile-page">
+        <div id="profilepic">
+          <img src={this.state.players.strThumb}></img>
+          </div>
+        <div className="stats">
         <h1>{this.state.players.strPlayer}</h1>
         <p>{this.state.players.strPosition}</p>
         <p>{this.state.players.strTeam}</p>
         <p>{this.state.players.strHeight}</p>
         <p>{this.state.players.strWeight}</p>
-        <p>{this.state.players.strDescriptionEN}</p>
+          <p>{this.state.players.strDescriptionEN}</p>
+          </div>
+      
       </div>
     )
   }

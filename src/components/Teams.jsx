@@ -7,13 +7,15 @@ function Teams(props) {
   console.log(props.listOfTeams)
 
   return (
-    <div>
+    <div className="team-container">
       {
         props.listOfTeams.map(teams => (
-          <Link to={`/team/${teams.idTeam}`} key={teams.strTeam} >
+          <div className="teams">
+            <Link to={`/team/${teams.idTeam}`} key={teams.strTeam} >
+            <img className="teamimg" src={teams.strTeamBadge} />
             <button>{teams.strTeam}</button>
-            <img src={teams.strTeamBadge} />
-          </Link>
+            </Link>
+          </div>
        
         ))
       }
