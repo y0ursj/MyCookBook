@@ -32,11 +32,11 @@ class Profile extends React.Component {
           <img src={this.state.players.strThumb}></img>
           </div>
         <div className="stats">
-        <h1>{this.state.players.strPlayer}</h1>
-        <p>{this.state.players.strPosition}</p>
-        <p>{this.state.players.strTeam}</p>
-        <p>{this.state.players.strHeight}</p>
-        <p>{this.state.players.strWeight}</p>
+        <p>Name: {this.state.players.strPlayer}</p>
+        <p>Position: {this.state.players.strPosition}</p>
+        <p>Plays for the {this.state.players.strTeam}</p>
+        <p>Height: {this.state.players.strHeight}</p>
+        <p>Weight: {this.state.players.strWeight}</p>
           <p>{this.state.players.strDescriptionEN}</p>
           </div>
       
