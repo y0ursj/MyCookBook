@@ -31,7 +31,9 @@ class Players extends React.Component {
           this.state.players.map(players => (
             <div className="players"><Link to={`/profile/${players.idPlayer}`} >
               <div className="players-center">
-                <img src={players.strCutout} />
+                {
+                  (players.strCutout ? <img src={players.strCutout} /> : <img src="https://www.stickpng.com/assets/images/58967e8c0803320bf17c2fb7.png" alt="michael jordan sweating from his eyes" />)
+                }
                 <button>{players.strPlayer}</button>
               </div>
             </Link></div>

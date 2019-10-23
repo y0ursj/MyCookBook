@@ -14,7 +14,7 @@ class Profile extends React.Component {
       idPlayers: props.idPlayer
     }
   }
- 
+
   componentDidMount = async () => {
     const response = await axios.get(`https://www.thesportsdb.com/api/v1/json/1/lookupplayer.php?id=${this.state.idPlayers}`)
     const players = response.data.players[0];
@@ -29,17 +29,19 @@ class Profile extends React.Component {
     return (
       <div id="profile-page">
         <div id="profilepic">
-          <img src={this.state.players.strThumb}></img>
-          </div>
+          {this.state.players.strThumb ? <img src={this.state.players.strThumb} /> : <img src="https://www.stickpng.com/assets/images/58967e8c0803320bf17c2fb7.png" alt="michael jordan sweating from his eyes" />}
+        </div>
         <div className="stats">
-        <p>Name: {this.state.players.strPlayer}</p>
-        <p>Position: {this.state.players.strPosition}</p>
-        <p>Plays for the {this.state.players.strTeam}</p>
-        <p>Height: {this.state.players.strHeight}</p>
-        <p>Weight: {this.state.players.strWeight}</p>
-          <p>{this.state.players.strDescriptionEN}</p>
-          </div>
-      
+          <div id="stats2">
+          <h2>{this.state.players.strPlayer}</h2>
+          <p>Position: {this.state.players.strPosition}</p>
+          <p>Plays for the {this.state.players.strTeam}</p>
+          <p>Height: {this.state.players.strHeight}</p>
+            <p>Weight: {this.state.players.strWeight}</p>
+            </div>
+          <p id ="playerdes">{this.state.players.strDescriptionEN}</p>
+        </div>
+
       </div>
     )
   }
