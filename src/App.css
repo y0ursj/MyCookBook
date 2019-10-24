@@ -119,10 +119,9 @@ button {
   position: relative;
   bottom: 0;
   background-color: black;
-  color: black;
+  color: white;
   width: 100%;
   height: 70px;
-  background: url('http://getwallpapers.com/wallpaper/full/2/5/e/293807.jpg');
 }
 
 .footer p {
@@ -153,18 +152,19 @@ button {
 }
 
 #playerdes {
-  height:385px;
-  width:550px;
+  height:403px;
+  width:551px;
   overflow:auto;border:8px solid blue;
   padding: 2%;
   font-family: 'Boogaloo', cursive;
+  margin: 0;
 
  
 }
 
 #profilepic img {
-  height: 800px;
-  width: 800px;
+  height: 822px;
+  width: 822px;
   text-align: center;
   border:8px solid white;
 }
@@ -192,10 +192,82 @@ p {
 #stats2 {
   border:8px solid red;
   font-family: 'Bowlby One SC', cursive;
+  width:575px;
+}
+
+@media only screen and (max-width: 375px) {
+
+.teams {
+  height: 100px;
+  width: 100px;
+  padding-bottom:0px;
+}
+
+.teams img {
+  width: 60px;
+  height: 50px;
 
 
 }
 
+#logo {
+  width: 150px; 
+
+}
+.players {
+  width: 50px;
+  height: 125px;
+  background-color: grey;
+  opacity: 0.8;
+  border: none;
+  background-color: transparent;
+}
+
+.playersimg2 img{
+  width: 75px;
+  height: 100px;
+  margin: 5px;
+}
+
+#profile-page {
+  display: flex;
+  flex-direction: column;
+  width: 5px;
+}
+
+#profilepic img {
+  height: 360px;
+  width: 360px;
+}
 
 
+#stats2 {
+  border:8px solid red;
+  font-family: 'Bowlby One SC', cursive;
+  width:360px;
+}
 
+#playerdes {
+  width:335px;
+  overflow:auto;border:8px solid blue;
+  padding: 2%;
+  font-family: 'Boogaloo', cursive;
+  margin: 0;
+}
+
+button { 
+  background-color: red;
+  /* border: 1px solid blue; */
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 8px;
+  position: relative;
+  top: 6px;
+  opacity: 0.9;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+}
